@@ -2,3 +2,5 @@ data/
 .venv
 requirements.txt
 suspicion_score_heatmap.html
+detection_script.py
+suspicion_score_heatmap.html
