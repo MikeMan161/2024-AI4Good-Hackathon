@@ -17,11 +17,17 @@ Data
 The project uses housing listing data stored in CSV format. Some of the key features include:
 
 List Price: The listed price of the rental property.
+
 Bedrooms Total: Number of bedrooms in the listing.
+
 Bathrooms Total: Number of bathrooms in the listing.
+
 Living Area: Total area in square feet.
+
 Days on Market: How long the listing has been available.
+
 Latitude and Longitude: Coordinates for geospatial analysis.
+
 Additional features are created in the project through feature engineering to help improve model accuracy and provide better insights into the data.
 
 Project Structure
