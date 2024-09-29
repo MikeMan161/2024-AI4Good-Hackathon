@@ -1,3 +1,4 @@
 data/
 .venv
 requirements.txt
+suspicion_score_heatmap.html
