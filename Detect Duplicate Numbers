@@ -1,0 +1,17 @@
+# Filter the dataset for relevant columns (replace 'Agent Name' and 'Phone Number' with actual column names)
+df_phone_name = df[['Listing Agent', 'Agency Phone']]
+
+# Group by 'Phone Number' and aggregate the unique 'Agent Name' values
+duplicates = df_phone_name.groupby('Agency Phone')['Listing Agent'].nunique()
+
+# Filter for phone numbers that are associated with more than one unique agent name
+suspicious_numbers = duplicates[duplicates > 1]
+
+print(suspicious_numbers)
+
+
+# Get the rows where phone numbers are suspicious
+suspicious_LISTINGS = df[df['Agency Phone'].isin(suspicious_numbers.index)]
+
+# Display these listings to manually inspect the potential scams
+print(suspicious_LISTINGS)
